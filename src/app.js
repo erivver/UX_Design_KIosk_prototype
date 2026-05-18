@@ -362,9 +362,7 @@ function thanks() {
     <div class="screen thanks-screen">
       <div class="check-circle">✓</div>
       <h2>불편을 끼쳐드려 죄송합니다.</h2>
-      <p>카드키 재발급이 완료되었어요. 
-      추가적인 문제가 발생한 경우 
-      프론트에 다시 와주세요.</p>
+      <p>카드키 재발급이 완료되었어요.<br />추가적인 문제가 발생한 경우<br />프론트에 다시 와주세요.</p>
       <strong>이용해주셔서 감사합니다.</strong>
       <button class="primary cta" data-action="home">처음 화면으로</button>
       <small class="auto">15초 후 처음 화면으로 이동합니다</small>
