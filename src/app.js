@@ -269,8 +269,7 @@ function insertKey() {
   return `
     ${reservationConfirm(true)}
     ${modal(
-      '카드키 재발급을 위해
-      객실 키를 넣어주세요.',
+      '카드키 재발급을 위해<br />객실 키를 넣어주세요.',
       `
         ${keyGraphic('기존 키 · ROOM KEY')}
         <button class="secondary wide" data-action="reservation">취소</button>
