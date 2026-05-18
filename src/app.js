@@ -269,12 +269,13 @@ function insertKey() {
   return `
     ${reservationConfirm(true)}
     ${modal(
-      '카드키 재발급을 위해 객실 키를 넣어주세요.',
+      '카드키 재발급을 위해
+      객실 키를 넣어주세요.',
       `
         ${keyGraphic('기존 키 · ROOM KEY')}
         <button class="secondary wide" data-action="reservation">취소</button>
         <button class="primary wide" data-action="keyError">삽입 감지</button>
-        <p class="countdown">10초 후 처음 화면으로 이동합니다</p>
+        <p class="countdown">30초 후 다음 화면으로 이동합니다</p>
       `
     )}
   `;
@@ -308,7 +309,7 @@ function countSelect() {
           <button data-action="increment">＋</button>
         </div>
         <button class="primary wide" data-action="processing">확인</button>
-        <p class="countdown">오늘 중 다른 화면으로 이동합니다</p>
+        <p class="countdown">30초 후 다음 화면으로 이동합니다</p>
       `,
       true
     )}
@@ -352,7 +353,7 @@ function complete() {
       <p>${reservation.roomType}</p>
       ${stayRow('compact')}
       <button class="secondary home-return" data-action="thanks">확인</button>
-      <small class="auto">22초 후 처음 화면으로 이동합니다</small>
+      <small class="auto">30초 후 다음 화면으로 이동합니다</small>
     </div>
   `;
 }
@@ -362,7 +363,9 @@ function thanks() {
     <div class="screen thanks-screen">
       <div class="check-circle">✓</div>
       <h2>불편을 끼쳐드려 죄송합니다.</h2>
-      <p>카드키 재발급이 완료되었어요. 추가적인 문제가 발생한 경우 프론트로 와주세요.</p>
+      <p>카드키 재발급이 완료되었어요. 
+      추가적인 문제가 발생한 경우 
+      프론트에 다시 와주세요.</p>
       <strong>이용해주셔서 감사합니다.</strong>
       <button class="primary cta" data-action="home">처음 화면으로</button>
       <small class="auto">15초 후 처음 화면으로 이동합니다</small>
